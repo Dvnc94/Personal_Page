@@ -1,6 +1,30 @@
-.navbar {
-    font-size: 5000;
+.header-container {
+    position: absolute;
+    width: 100%;
+    top: 54px;
 }
-.navbar-brand {
-    font-size: 5000;
+.tab-name-main{
+    color: grey;
+    padding: 0px 10px 0px 10px;
+    font-size: 20px;
+}
+.tab-name-main:hover{
+    text-decoration: none;
+    color: white
+}
+.tab-name{
+    color: grey;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+}
+.tab-name:hover{
+    text-decoration: none;
+    color: white
+}
+.nav-contents{
+    list-style-type: none;
+    color: white;
+    display: -webkit-inline-box;
+    margin: 0 0 0 0;
+    padding: 0;
 }
