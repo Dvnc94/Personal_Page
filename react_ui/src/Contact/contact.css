@@ -1,5 +1,76 @@
 .contact-container {
     position: absolute;
+    width: 96%;
+    top: 15%;
+    left: 2%;
+}
+.envelop-container {
+    position: absolute;
+    background-color: white;
+    left: 10%;
+    width: 80%;
+    height: 470px;
+    margin-top: 5%;
+    min-width: 330px;
+    box-shadow: 5px 5px 15px 0px lightgrey;
+}
+.envelop-fold {
+    content: '';
+    position: absolute;
     width: 100%;
-    top: 54px;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    border-top: 96px solid white;
+    filter: drop-shadow(5px 6px 9px lightgrey);
+}
+.fold-heading {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+.logo-container {
+    width: 100%;
+    position: absolute;
+    height: 70px;
+    top: 13%;
+    z-index: 1;
+}
+.dvnc-seal {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 0px 3px black);
+}
+.form {
+    padding: 131px 15% 10% 15%;
+}
+.label {
+    display: block;
+    margin: .5rem 0 0 0;
+}
+.input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #d3d3d33d;
+    border: 0;
+    filter: drop-shadow(5px 6px 9px lightgrey);
+}
+.send-button-container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 35px;
+
+}
+.send-button {
+    background-color: black;
+    color: white;
+    padding: 12px 30px 12px 30px;
+    border-radius: 8px;
+    filter: drop-shadow(0px 3px 3px black);
 }

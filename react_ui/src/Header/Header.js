@@ -9,14 +9,14 @@ class Header extends Component {
       <div className="header-container">
         <Navbar bg="dark" fixed="top" variant="dark" className="navbar">
           <ul className="nav-contents">
-            <li><Link className="tab-name-main" to="/">Divyanshi Srivastava</Link></li>
-            <li><Link className="tab-name" to="/about">About</Link></li>
-            <li><Link className="tab-name" to="/resume">Resume</Link></li>
-            <li><Link className="tab-name" to="/contact">Contact</Link></li>
+            <li><Link className="tab-name-main" to="/Portfolio">Divyanshi Srivastava</Link></li>
+            <li><Link className="tab-name" to="/Portfolio/about">About</Link></li>
+            <li><Link className="tab-name" to="/Portfolio/resume">Resume</Link></li>
+            <li><Link className="tab-name" to="/Portfolio/contact">Contact</Link></li>
           </ul>
-          <Form inline>
+          {/* <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          </Form>
+          </Form> */}
         </Navbar>
       </div>
     );

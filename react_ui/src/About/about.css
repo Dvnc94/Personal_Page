@@ -1,5 +1,58 @@
-.about-container {
+.about-page {
     position: absolute;
     width: 100%;
-    top: 54px;
+    height: 100%;
+    top: 20%;
+    z-index: 0;
+}
+.about-container {
+    text-align: center;
+    min-height: 250px;
+}
+.img-container {
+    display: inline-block;
+    width: 50%;
+    min-height: 250px;
+    min-width: 250px;
+}
+.profile-pic {
+    width: 90%;
+    border-radius: 50%;
+    filter: drop-shadow(5px 6px 9px black);
+    max-width: 400px;
+}
+.name-container {
+    display: inline-block;
+    width: 50%;
+    min-width: 250px;
+    vertical-align: middle;
+}
+.name {
+    font-size: 5vw;
+    
+}
+.title {
+    font-size: 3vw;
+}
+.about-me {
+    padding: 4vw 0 0 0;
+    font-size: 2vw;
+}
+.skill-container {
+    background-color: lightgrey;
+    position: absolute;
+    width: 100%;
+    margin-top: 25px;
+
+}
+.skill-heading {
+    font-size: 5vw;
+    padding: 10vw 0vw 0 4vw;
+}
+.envelop {
+    content: '';
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+    border-top: 8vw solid white;
+    filter: drop-shadow(0px 15px 6px grey);
 }

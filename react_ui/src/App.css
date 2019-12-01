@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
   width: 100%;
-  background-color: lightgray;
   height: 100%;
   position: absolute;
+  min-width: 450px;
+  z-index: 0;
 }
 
 .App-logo {
