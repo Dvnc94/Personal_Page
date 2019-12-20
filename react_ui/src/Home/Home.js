@@ -1,46 +1,52 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './home.css';
 import Card from "../Card/Card";
 import ucrImage from "../../public/UCR.png";
 import infy from "../../public/Infosys.png";
+import ImageBoxAnimation from './ImageBoxAnimation';
+
+const Wrapper = styled.div``;
 
 class Home extends Component {
   render() {
+    console.log("home render");
     return (
       <div className="home-container">
-        <div className="image-container">
-          <div className="name-heading">DIVYANSHI SRIVASTAVA</div>
-          <div className="social-media-container">
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              className="media-icon"
-              size="3x"
-              onClick={() => window.location.href="https://www.linkedin.com/in/divyanshi-srivastava/"}
-            />
-            <FontAwesomeIcon
-              icon={["fab", "github-square"]}
-              className="media-icon"
-              size="3x"
-              onClick={() => window.location.href= "https://github.com/Dvnc94"}
-            />
-            {/* <FontAwesomeIcon
-              icon={["fab", "medium"]}
-              className="media-icon"
-              size="3x"
-              onClick={() => window.location.href ="https://medium.com/@divyanshi1350"}
-            /> */}
-            <FontAwesomeIcon
-              icon={["fab", "facebook-square"]}
-              className="media-icon"
-              size="3x"
-              onClick={() => window.location.href= "https://www.facebook.com/divyanshi.srivastava.1"}
-            />
-          </div>
-          <div className="slope-container">
+        <Wrapper>
+          <ImageBoxAnimation />
+        </Wrapper>
+        <div className="name-heading">DIVYANSHI SRIVASTAVA</div>
+        <div className="social-media-container">
+          <FontAwesomeIcon
+            icon={["fab", "linkedin"]}
+            className="media-icon"
+            size="3x"
+            onClick={() => window.location.href="https://www.linkedin.com/in/divyanshi-srivastava/"}
+          />
+          <FontAwesomeIcon
+            icon={["fab", "github-square"]}
+            className="media-icon"
+            size="3x"
+            onClick={() => window.location.href= "https://github.com/Dvnc94"}
+          />
+          {/* <FontAwesomeIcon
+            icon={["fab", "medium"]}
+            className="media-icon"
+            size="3x"
+            onClick={() => window.location.href ="https://medium.com/@divyanshi1350"}
+          /> */}
+          <FontAwesomeIcon
+            icon={["fab", "facebook-square"]}
+            className="media-icon"
+            size="3x"
+            onClick={() => window.location.href= "https://www.facebook.com/divyanshi.srivastava.1"}
+          />
+        </div>
+        <div className="slope-container">
           <div className="left-slope"/>
           <div className="right-slope"/>
-        </div>
         </div>
         <div className="card-component-container">
           <div className="highlights-heading">Highlights</div>
