@@ -42,12 +42,41 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+@media screen and (min-width: 700px) {
+  .side-front-content {
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .side-front-content {
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  .back-container {
+    font-size: 1.5vw; 
+  }
+}
+@media screen and (max-width: 700px) {
+  .back-container {
+    font-size: 2vw;
+  }
+}
 .back-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2vw;
 }
 .side-back {
   z-index: 2;
