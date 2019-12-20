@@ -8,6 +8,13 @@ class CardFront extends Component {
             <div className='side-front-content'>
                {this.props.data}
             </div>
+            {this.props.image !== "" ?
+              <img
+                className="front-image"
+                style={{height: this.props.imageHeight}}
+                src={this.props.image}
+                alt=""
+              /> : null}
         </div>
         )
     }

@@ -8,8 +8,15 @@ class Card extends Component {
     return(
       <div className='card-container'>
         <div className='card-body'>
-          <CardBack data={this.props.back} link={this.props.link} />
-          <CardFront data={this.props.front} />
+          <CardBack
+            data={this.props.back}
+            link={this.props.link}
+          />
+          <CardFront
+            data={this.props.front}
+            image={this.props.frontImage}
+            imageHeight={this.props.frontImageHeight}
+          />
         </div>
       </div>
     )

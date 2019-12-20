@@ -27,26 +27,26 @@ class Header extends Component {
               to="/Portfolio"
               onClick={(e) => this.handleTabChange(e, true)}
             >Divyanshi Srivastava</Link>
-          <ul className="nav-contents">
-            <li className=""><Link
-              className="tab-name"
-              to="/Portfolio/about"
-              onClick={(e) => this.handleTabChange(e, false)}
-              >About
-              </Link></li>
-            <li><a
-              className="tab-name"
-              href={Resume}
-              target='_blank' 
-              >Resume
-              </a ></li>
-            <li><Link
-              className="tab-name"
-              to="/Portfolio/contact"
-              onClick={(e) => this.handleTabChange(e, false)}
-              >Contact
-              </Link></li>
-          </ul>
+            <ul className="nav navbar-nav nav-contents">
+              <li className=""><Link
+                className="tab-name"
+                to="/Portfolio/about"
+                onClick={(e) => this.handleTabChange(e, false)}
+                >About
+                </Link></li>
+              <li><a
+                className="tab-name"
+                href={Resume}
+                target='_blank' 
+                >Resume
+                </a ></li>
+              <li><Link
+                className="tab-name"
+                to="/Portfolio/contact"
+                onClick={(e) => this.handleTabChange(e, false)}
+                >Contact
+                </Link></li>
+            </ul>
         </nav>
       </div>
     );

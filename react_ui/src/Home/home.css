@@ -41,7 +41,7 @@
 .slope-container {
     width: 100%;
     position: absolute;
-    bottom: -7px;
+    bottom: -10px;
 }
 .left-slope {
     content: '';
@@ -60,13 +60,25 @@
 }
 .card-component-container{
     background-color: #d3d3d329;
+    padding: 20px;
 }
 .highlights-heading {
     font-size: 5vw;
-    padding: 10vw 0vw 0 4vw;
+    padding: 5vw 0vw 0 4vw;
     width: 100%;
 }
 
 .other-text {
-
+    text-align: center;
+    padding: 20px;
+    background-color: #d3d3d329;
+    font-size: 2.5vw;
 }
+.footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #d3d3d329;
+    font-size: 1.5vw;
+  }

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './home.css';
 import Card from "../Card/Card";
+import ucrImage from "../../public/UCR.png";
+import infy from "../../public/Infosys.png";
 
 class Home extends Component {
   render() {
@@ -46,14 +48,19 @@ class Home extends Component {
             front="Student at University of California- Riverside"
             back="Computer Science Graduate Student at UCR. Go Highlanders !!"
             link=""
+            frontImage={ucrImage}
+            frontImageHeight="5vw"
           />
           <Card
             front="Ex Power Programmer at Infosys"
             back="Power Programmers are ‘Polyglots’, experts across multiple technologies and play the role of a full stack developer in complex engineering projects"
             link="https://www.infosys.com/careers/power-programmers.html"
+            frontImage={infy}
+            frontImageHeight="3.5vw"
           />
         </div>
         <div className="other-text">Check out other tabs to know more about me</div>
+        <footer className="footer"> &copy; 2019 Divyanshi Srivastava</footer>
       </div>
     );
   }
