@@ -1,23 +1,53 @@
 import React, { Component } from 'react';
-import { Navbar, Form, FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './header.css';
+import Resume from "../../public/Divyanshi_Srivastava_2020.pdf";
 
 class Header extends Component {
-  render() {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeTab: window.location.pathname === "/Portfolio",
+    };
+  }
+
+  handleTabChange(e, tab) {
+    this.setState({ 
+      activeTab: tab
+    });
+  }
+
+  render() {    
     return (
       <div className="header-container">
-        <Navbar bg="dark" fixed="top" variant="dark" className="navbar">
+        <nav fixed="top" className={this.state.activeTab ? "navbar-transparent" : "navbar"}>
+            <Link
+              className="navbar-brand"
+              to="/Portfolio"
+              onClick={(e) => this.handleTabChange(e, true)}
+            >Divyanshi Srivastava</Link>
           <ul className="nav-contents">
-            <li><Link className="tab-name-main" to="/Portfolio">Divyanshi Srivastava</Link></li>
-            <li><Link className="tab-name" to="/Portfolio/about">About</Link></li>
-            <li><Link className="tab-name" to="/Portfolio/resume">Resume</Link></li>
-            <li><Link className="tab-name" to="/Portfolio/contact">Contact</Link></li>
+            <li className=""><Link
+              className="tab-name"
+              to="/Portfolio/about"
+              onClick={(e) => this.handleTabChange(e, false)}
+              >About
+              </Link></li>
+            <li><a
+              className="tab-name"
+              href={Resume}
+              target='_blank' 
+              >Resume
+              </a ></li>
+            <li><Link
+              className="tab-name"
+              to="/Portfolio/contact"
+              onClick={(e) => this.handleTabChange(e, false)}
+              >Contact
+              </Link></li>
           </ul>
-          {/* <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          </Form> */}
-        </Navbar>
+        </nav>
       </div>
     );
   }

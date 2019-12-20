@@ -1,26 +1,39 @@
 .header-container {
     position: absolute;
     width: 100%;
-    top: 54px;
     z-index: 10;
 }
-.tab-name-main{
-    color: grey;
+.navbar {
+    background-color: #000000bf;
+}
+.navbar-transparent {
+    background-color: black;
+    opacity: .5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+.navbar-brand{
+    color: white;
     padding: 0px 10px 0px 10px;
     font-size: 20px;
 }
-.tab-name-main:hover{
-    text-decoration: none;
-    color: white
+.navbar-brand:hover{
+    color: white;
+    text-decoration: underline;
+    filter: drop-shadow(0px 15px 6px white);
 }
 .tab-name{
-    color: grey;
+    color: white;
     padding: 0px 10px 0px 10px;
-    text-decoration: none;
+    float: right;
 }
-.tab-name:hover{
-    text-decoration: none;
-    color: white
+.tab-name:hover {
+    color: white;
+    text-decoration: underline;
+    filter: drop-shadow(0px 15px 6px white);
 }
 .nav-contents{
     list-style-type: none;
@@ -28,4 +41,9 @@
     display: -webkit-inline-box;
     margin: 0 0 0 0;
     padding: 0;
+    width: fit-content;
+    float: right;
+}
+.right-tabs {
+    float: inline-end;
 }

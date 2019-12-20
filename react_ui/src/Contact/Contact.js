@@ -20,7 +20,7 @@ class Contact extends Component {
               <input className="input" />
               <label className="label">What do u wanna say...</label>
               <textarea className="input" rows="4"/>
-              <div className="send-button-container"><btn className="send-button">Send  </btn></div>
+              <div className="send-button-container"><button className="send-button">Send  </button></div>
             </form>
             </div>
           </div>

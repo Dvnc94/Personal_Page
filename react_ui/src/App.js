@@ -6,7 +6,6 @@ import Header from "./Header/Header";
 import Home from "./Home/Home";
 import Contact from "./Contact/Contact";
 import About from "./About/About";
-import Resume from "./Resume/Resume";
 
 class App extends Component {
   render() {
@@ -15,7 +14,6 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route exact path='/Portfolio' component={Home} />
-          <Route path='/Portfolio/resume' component={Resume} />
           <Route path='/Portfolio/about' component={About} />
           <Route path='/Portfolio/contact' component={Contact} /> 
         </div>

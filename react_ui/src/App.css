@@ -4,6 +4,7 @@
   position: absolute;
   min-width: 450px;
   z-index: 0;
+  font-family: auto;
 }
 
 .App-logo {
