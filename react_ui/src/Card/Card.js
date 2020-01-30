@@ -5,6 +5,8 @@ import CardBack from "./CardBack";
 
 class Card extends Component {
   render() {
+    console.log("in card");
+    
     return(
       <div className='card-container'>
         <div className='card-body'>

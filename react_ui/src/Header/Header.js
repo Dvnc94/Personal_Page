@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import Resume from "../../public/Divyanshi_Srivastava_2020.pdf";
+import Resume from "../../public/portfolo_resume.pdf";
 
 class Header extends Component {
 

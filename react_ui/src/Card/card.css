@@ -4,7 +4,9 @@
     margin: 32px auto;
     height: 320px;
     perspective: 1000px;
-    width: 50%;
+    width: 35%;
+    display: inline-block;
+    margin-left: 10%;
 }
 .card-body {
   width: 100%;
@@ -64,7 +66,7 @@
 }
 @media screen and (min-width: 700px) {
   .back-container {
-    font-size: 1.5vw; 
+    font-size: 1vw; 
   }
 }
 @media screen and (max-width: 700px) {
