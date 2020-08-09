@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './about.css';
 import profilePic from "../../public/profile_pic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { experiences, skillsArray } from './constants';
+import { experiences, skillsArray, volunteerExp } from './constants';
 
 class About extends Component {
   render() {
@@ -17,6 +17,20 @@ class About extends Component {
       </div>
     ));
     var experience = experiences.map((exp, index) => (
+      <div className="exp-container" key={index}>
+        <div className="company-logo-container">
+          <img src={exp.logo} className="company-logo" alt=""/>
+        </div>
+        <div className="content-container">
+          <div className="position">{exp.position}</div>
+          <div className="duration">{exp.start} - {exp.end}</div>
+          <div className="company">{exp.company}</div>
+          <br />
+          <div className="responsibilities">{exp.responsibilities}</div>
+        </div>
+      </div>
+    ));
+    var volunteer = volunteerExp.map((exp, index) => (
       <div className="exp-container" key={index}>
         <div className="company-logo-container">
           <img src={exp.logo} className="company-logo" alt=""/>
@@ -52,17 +66,25 @@ class About extends Component {
             <FontAwesomeIcon icon={["fas", "laugh-wink"]} className="icon-wink" size="2x" />
             </p>
           </div>
-        </div>
+        </div> 
         <div className="skill-container">
-          <div className="skill-heading"> Skills</div>
-          <div className="skill-row">
-            {skills}
+          <div className="skill-content">
+            <div className="skill-heading"> Skills</div>
+            <div className="skill-row">
+              {skills}
+            </div>
           </div>
         </div>
         <div className="experience-container">
           <div className="skill-heading">Experience</div>
             <div className="exp-list-container">
             {experience}
+            </div>
+        </div>
+        <div className="volunteer-container">
+          <div className="skill-heading">Volunteer</div>
+            <div className="exp-list-container">
+            {volunteer}
             </div>
         </div>
       </div>

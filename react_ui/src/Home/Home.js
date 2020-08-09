@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './home.css';
 import Card from "../Card/Card";
-import ucrImage from "../../public/UCR.png";
-import infy from "../../public/Infosys.png";
 import flowless from "../../public/Flowless_logo.png";
 import flare from "../../public/Flare_logo.png";
 import ImageBoxAnimation from './ImageBoxAnimation';

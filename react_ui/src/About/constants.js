@@ -1,6 +1,8 @@
 import Edvisor from "./images/edvisor.jpeg";
 import Harness from "./images/harness.png";
 import Infosys from "./images/infosys.jpeg";
+import Winc from "./images/winc.png";
+import Rose from "./images/rosehack.png";
 
 export const experiences = [{
     "company": "EdVisor Education",
@@ -51,3 +53,19 @@ export const skillsArray = [
     {"name": "Docker","logo": "docker"},
     {"name": "Github","logo": "github"}
 ]
+
+export const volunteerExp = [{
+    "company": "UCR Women in Computing",
+    "position": "GRaduate Advisor",
+    "start": "Feb 2020",
+    "end": "Present",
+    "responsibilities": "",
+    "logo": Winc
+},{
+    "company": "Rode Hack 2020",
+    "position": "Mentor",
+    "start": "Jan 2020",
+    "end": "Jan 2020",
+    "responsibilities": "Assisted participants with queries in web development technologies at the female-centric Hackathon organised at UCR.",
+    "logo": Rose
+}];
