@@ -2,9 +2,34 @@ import React, { Component } from 'react';
 import './about.css';
 import profilePic from "../../public/profile_pic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { experiences, skillsArray } from './constants';
 
 class About extends Component {
   render() {
+    var skills = skillsArray.map((skill, i) => (
+      <div className="skill-box" key={i}>
+        <FontAwesomeIcon
+          icon={[(skill.logo === "database"? "fas": "fab"), skill.logo]}
+          className="icon"
+          size="6x"
+        />
+        <div className="skill">{skill.name}</div>
+      </div>
+    ));
+    var experience = experiences.map((exp, index) => (
+      <div className="exp-container" key={index}>
+        <div className="company-logo-container">
+          <img src={exp.logo} className="company-logo" alt=""/>
+        </div>
+        <div className="content-container">
+          <div className="position">{exp.position}</div>
+          <div className="duration">{exp.start} - {exp.end}</div>
+          <div className="company">{exp.company}</div>
+          <br />
+          <div className="responsibilities">{exp.responsibilities}</div>
+        </div>
+      </div>
+    ));
     return (
       <div className="about-page">
         <div className="about-container">
@@ -15,36 +40,30 @@ class About extends Component {
             <div className="name">Divyanshi Srivastava</div>
             <div className="title">Full-stack Developer</div>
             <p className="about-me">
-            I am a Computer Science Graduate Student at University of California - Riverside. Graduating in Jan 2021. I have an experience of working as a full-stack developer in Infosys (India). I am also an ex Power Programmer, a very challenging and technically satisfying role thanks to which I have worked in many diverse projects.
-            I believe the best way to learn any technology is by implementing it.
+            I am a Computer Science graduate student at University of California - Riverside passionate about developing solutions helping the student community.
+            I love learning new concepts and enjoy implementing them even more.
+            I thrive on being challenged and engaging in projects that require me to work outside my comfort and knowledge set. 
+            I have worked on a lot of technologies but React is my favorite. This portfolio is my ode to React. 
+            <br/><br/>
+            I love attending Hackathons and brainstorming awesome ideas with like-minded people in a short time span. I am also a supporter of Women and diversity in Tech.
+            I am a foodie and a movies junkie.
+            <br/><br/>
+            I could be tempted by a really good opportunity!
+            <FontAwesomeIcon icon={["fas", "laugh-wink"]} className="icon-wink" size="2x" />
             </p>
           </div>
         </div>
         <div className="skill-container">
-          <div className="envelop"/>
           <div className="skill-heading"> Skills</div>
           <div className="skill-row">
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "react"]} className="icon" spin size="6x" />
-              <div className="skill">React</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "java"]} className="icon" size="6x" />
-              <div className="skill">Java</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "python"]} className="icon" spin size="6x" />
-              <div className="skill">Python</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "html5"]} className="icon" size="6x" />
-              <div className="skill">HTML/CSS</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "js"]} className="icon" size="6x" />
-              <div className="skill">JavaScript</div>
-            </div>
+            {skills}
           </div>
+        </div>
+        <div className="experience-container">
+          <div className="skill-heading">Experience</div>
+            <div className="exp-list-container">
+            {experience}
+            </div>
         </div>
       </div>
     );

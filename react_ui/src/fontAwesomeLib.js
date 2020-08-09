@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-// import { faMoneyBill } from '@fortawesome/pro-solid-svg-icons';
+import { fas, faLaughWink } from '@fortawesome/free-solid-svg-icons';
 import { fab,
     faPython,
     faJs,
@@ -10,10 +10,20 @@ import { fab,
     faGithubSquare,
     faLinkedin,
     faMedium,
+    faBootstrap,
+    faNode,
+    faCss3Alt,
+    faAngular,
+    faJira,
+    faLinux,
+    faNpm,
+    faUnity,
+    faBitbucket,
+    faDocker,
+    faGithub
 } from '@fortawesome/free-brands-svg-icons';
-//  import { faAngular } from '@fortawesome/free-brands-svg-icons';
 
-library.add( fab,
+library.add( fab,fas,
     faPython,
     faJs,
     faHtml5,
@@ -22,4 +32,16 @@ library.add( fab,
     faGithubSquare,
     faLinkedin,
     faMedium,
+    faLaughWink,
+    faBootstrap,
+    faNode,
+    faCss3Alt,
+    faAngular,
+    faJira,
+    faLinux,
+    faNpm,
+    faUnity,
+    faBitbucket,
+    faDocker,
+    faGithub
 );
