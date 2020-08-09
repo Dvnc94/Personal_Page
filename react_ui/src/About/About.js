@@ -2,14 +2,24 @@ import React, { Component } from 'react';
 import './about.css';
 import profilePic from "../../public/profile_pic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import experiences from './exp';
+import { experiences, skillsArray } from './constants';
 
 class About extends Component {
   render() {
+    var skills = skillsArray.map((skill, i) => (
+      <div className="skill-box" key={i}>
+        <FontAwesomeIcon
+          icon={[(skill.logo === "database"? "fas": "fab"), skill.logo]}
+          className="icon"
+          size="6x"
+        />
+        <div className="skill">{skill.name}</div>
+      </div>
+    ));
     var experience = experiences.map((exp, index) => (
       <div className="exp-container" key={index}>
         <div className="company-logo-container">
-          <img src={`../images/${exp.src}`} alt="NA"/>
+          <img src={exp.logo} className="company-logo" alt=""/>
         </div>
         <div className="content-container">
           <div className="position">{exp.position}</div>
@@ -20,7 +30,6 @@ class About extends Component {
         </div>
       </div>
     ));
-    console.log(process.env.PUBLIC_URL + "/exp.src");
     return (
       <div className="about-page">
         <div className="about-container">
@@ -39,34 +48,15 @@ class About extends Component {
             I love attending Hackathons and brainstorming awesome ideas with like-minded people in a short time span. I am also a supporter of Women and diversity in Tech.
             I am a foodie and a movies junkie.
             <br/><br/>
-            I could be tempted by a really good opportunity! :P
-            <FontAwesomeIcon icon={["far", "laughWink"]} className="icon" spin size="6x" />
+            I could be tempted by a really good opportunity!
+            <FontAwesomeIcon icon={["fas", "laugh-wink"]} className="icon-wink" size="2x" />
             </p>
           </div>
         </div>
         <div className="skill-container">
           <div className="skill-heading"> Skills</div>
           <div className="skill-row">
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "react"]} className="icon" spin size="6x" />
-              <div className="skill">React</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "java"]} className="icon" size="6x" />
-              <div className="skill">Java</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "python"]} className="icon" spin size="6x" />
-              <div className="skill">Python</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "html5"]} className="icon" size="6x" />
-              <div className="skill">HTML/CSS</div>
-            </div>
-            <div className="skill-box">
-              <FontAwesomeIcon icon={["fab", "js"]} className="icon" size="6x" />
-              <div className="skill">JavaScript</div>
-            </div>
+            {skills}
           </div>
         </div>
         <div className="experience-container">
