@@ -17,7 +17,7 @@
         text-align: center;
         top: 30%;
         position: absolute;
-        font-size: 10vw;
+        font-size: 7vw;
     }
 }
 
@@ -28,7 +28,7 @@
         text-align: center;
         top: 30%;
         position: absolute;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 @media screen and (min-width: 550px) {
@@ -49,14 +49,14 @@
 }
 .media-icon {
     color: white;
-    margin: 2vw;
+    margin: 1vw;
     vertical-align: text-top;
     text-align: center;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 .media-icon:hover {
-    font-size: 5vw;
+    font-size: 3.5vw;
     filter: drop-shadow(0px 0px 10px WHITE);
 }
 
@@ -82,12 +82,12 @@
 }
 .card-component-container{
     background-color: #d3d3d329;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 @media screen and (min-width: 700px) {
     .highlights-heading {
-        font-size: 3vw;
+        font-size: 2vw;
         padding: 5vw 0vw 0 4vw;
         width: 100%;
     }
@@ -115,11 +115,15 @@
         font-size: 2.5vw;
     }
 }
+.cards {
+    text-align: center;
+    width: 100%;
+}
 .footer {
     position: absolute;
     text-align: center;
     width: 100%;
     padding: 20px;
     background-color: #d3d3d329;
-    font-size: 1.5vw;
+    font-size: 1vw;
   }

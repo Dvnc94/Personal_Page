@@ -34,7 +34,7 @@ class Header extends Component {
                 onClick={(e) => this.handleTabChange(e, false)}
                 >About
                 </Link></li>
-              <li><a
+              {/* <li><a
                 className="tab-name"
                 href={Resume}
                 target='_blank' 
@@ -45,7 +45,7 @@ class Header extends Component {
                 to="/Portfolio/contact"
                 onClick={(e) => this.handleTabChange(e, false)}
                 >Contact
-                </Link></li>
+                </Link></li> */}
             </ul>
         </nav>
       </div>

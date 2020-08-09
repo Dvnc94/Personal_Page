@@ -85,13 +85,14 @@
 .skill-box {
     display: inline-block;
     font-size: .5vw;
-}
-.skill-box:hover *{
     filter: drop-shadow(0px 4px 3px grey);
 }
+/* .skill-box:hover *{
+    filter: drop-shadow(0px 4px 3px grey);
+} */
 .skill {
    color: white;
-   font-size: .5vw;
+   font-size: 1vw;
    padding: 2vw;
 }
 .icon {

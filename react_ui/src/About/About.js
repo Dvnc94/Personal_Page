@@ -57,7 +57,7 @@ class About extends Component {
             I am a Computer Science graduate student at University of California - Riverside passionate about developing solutions helping the student community.
             I love learning new concepts and enjoy implementing them even more.
             I thrive on being challenged and engaging in projects that require me to work outside my comfort and knowledge set. 
-            I have worked on a lot of technologies but React is my favorite. This portfolio is my ode to React. 
+            I have worked on a lot of technologies but React is my favorite. This portfolio is my tribute to React. 
             <br/><br/>
             I love attending Hackathons and brainstorming awesome ideas with like-minded people in a short time span. I am also a supporter of Women and diversity in Tech.
             I am a foodie and a movies junkie.

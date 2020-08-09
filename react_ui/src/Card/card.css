@@ -1,12 +1,11 @@
 .card-container {
   position: relative;
     z-index: 1;
-    margin: 32px auto;
-    height: 320px;
-    perspective: 1000px;
-    width: 35%;
+    margin: 3vw;
+    height: 425px;
+    /* perspective: 1000px; */
+    width: 15%;
     display: inline-block;
-    margin-left: 10%;
 }
 .card-body {
   width: 100%;
@@ -37,7 +36,7 @@
   text-align: center;
 }
 .side-front-content {
-  font-size: 3vw;
+  font-size: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +45,7 @@
 }
 @media screen and (min-width: 700px) {
   .side-front-content {
-    font-size: 2vw;
+    font-size: 1.5vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,7 +55,7 @@
 }
 @media screen and (max-width: 700px) {
   .side-front-content {
-    font-size: 3vw;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
