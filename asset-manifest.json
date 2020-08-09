@@ -1,12 +1,12 @@
 {
-  "main.css": "static/css/main.ffa2d35d.css",
-  "main.css.map": "static/css/main.ffa2d35d.css.map",
-  "main.js": "static/js/main.bae1c8fc.js",
-  "main.js.map": "static/js/main.bae1c8fc.js.map",
+  "main.css": "static/css/main.b27934d7.css",
+  "main.css.map": "static/css/main.b27934d7.css.map",
+  "main.js": "static/js/main.de460bfe.js",
+  "main.js.map": "static/js/main.de460bfe.js.map",
   "static/media/Flare_logo.png": "static/media/Flare_logo.72ac4e58.png",
   "static/media/Flowless_logo.png": "static/media/Flowless_logo.2cb2f333.png",
-  "static/media/Infosys.png": "static/media/Infosys.cdd51d33.png",
   "static/media/bgMountains.jpg": "static/media/bgMountains.ae9b80ff.jpg",
   "static/media/portfolo_resume.pdf": "static/media/portfolo_resume.f32c90dc.pdf",
-  "static/media/profile_pic.png": "static/media/profile_pic.2b0ae62e.png"
+  "static/media/profile_pic.png": "static/media/profile_pic.2b0ae62e.png",
+  "static/media/rosehack.png": "static/media/rosehack.a55355f9.png"
 }
