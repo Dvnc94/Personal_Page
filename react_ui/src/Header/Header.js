@@ -39,13 +39,13 @@ class Header extends Component {
                 href={Resume}
                 target='_blank' 
                 >Resume
-                </a ></li>
+                </a ></li> */}
               <li><Link
                 className="tab-name"
                 to="/Portfolio/contact"
                 onClick={(e) => this.handleTabChange(e, false)}
                 >Contact
-                </Link></li> */}
+                </Link></li>
             </ul>
         </nav>
       </div>

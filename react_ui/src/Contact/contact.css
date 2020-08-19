@@ -7,11 +7,10 @@
     -moz-animation: argh-my-eyes 1s infinite;
 }
 .envelop-container {
-    position: absolute;
     background-color: white;
-    left: 15%;
+    margin-left: 15%;
     width: 70%;
-    height: 470px;
+    min-height: 470px;
     margin-top: 150px;
     min-width: 330px;
     box-shadow: 5px 5px 15px 0px grey;
@@ -19,14 +18,14 @@
 .envelop-fold {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 70%;
     border-left: 37px solid transparent;
     border-right: 37px solid transparent;
     border-top: 96px solid white;
     filter: drop-shadow(5px 6px 9px lightgrey);
 }
 .fold-heading {
-    width: 100%;
+    width: 70%;
     position: absolute;
     z-index: 1;
     height: 20%;
@@ -34,10 +33,10 @@
     vertical-align: middle;
 }
 .logo-container {
-    width: 100%;
+    width: 70%;
     position: absolute;
     height: 70px;
-    top: 13%;
+    top: 27%;
     z-index: 1;
 }
 .dvnc-seal {
@@ -48,11 +47,11 @@
     filter: drop-shadow(0px 0px 3px black);
 }
 .form {
-    padding: 131px 15% 10% 15%;
+    padding: 131px 15% 0 15%;
 }
 .label {
     display: block;
-    margin: .5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
 }
 .input {
     display: block;
@@ -64,9 +63,10 @@
 }
 .send-button-container {
     text-align: center;
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    top: 25px;
+    /* top: 25px; */
+    padding: 30px;
 }
 .send-button {
     background-color: black;
@@ -95,3 +95,7 @@
     99% { background-color:rgb(206, 204, 204); }
     100% { background-color: lightgrey; }
   }
+.red{
+    display: inline-block;
+    color: red;
+}
