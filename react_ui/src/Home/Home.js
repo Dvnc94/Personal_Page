@@ -11,7 +11,6 @@ const Wrapper = styled.div``;
 
 class Home extends Component {
   render() {
-    console.log("home render");
     return (
       <div className="home-container">
         <Wrapper>
