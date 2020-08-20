@@ -36,7 +36,6 @@ class ImageBoxAnimation extends Component {
     };
     render() {
       const { animationNumber } = this.state;
-      console.log("imageboxanimation render");
       return (
         <ImageBox>
           <BoxAnimated

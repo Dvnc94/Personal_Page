@@ -4,9 +4,7 @@ import CardFront from "./CardFront";
 import CardBack from "./CardBack";
 
 class Card extends Component {
-  render() {
-    console.log("in card");
-    
+  render() {    
     return(
       <div className='card-container'>
         <div className='card-body'>

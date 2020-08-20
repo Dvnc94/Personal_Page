@@ -62,7 +62,7 @@ export const volunteerExp = [{
     "responsibilities": "",
     "logo": Winc
 },{
-    "company": "Rode Hack 2020",
+    "company": "Rose Hack 2020",
     "position": "Mentor",
     "start": "Jan 2020",
     "end": "Jan 2020",
