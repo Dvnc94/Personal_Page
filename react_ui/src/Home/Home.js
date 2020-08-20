@@ -43,6 +43,12 @@ class Home extends Component {
             size="3x"
             onClick={() => window.location.href= "https://www.facebook.com/divyanshi.srivastava.1"}
           />
+          <FontAwesomeIcon
+            icon={["fab", "dev"]}
+            className="media-icon"
+            size="3x"
+            onClick={() => window.location.href= "https://devpost.com/divyanshi1350?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"}
+          />
         </div>
         <div className="slope-container">
           <div className="left-slope"/>
