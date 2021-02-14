@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import backgroundImage from "../../public/bgMountains.jpg";
+import backgroundImage from "../../public/Software.jpg";
 import { BoxAnimated } from './BoxAnimated';
 
 const ImageBox = styled.div`
