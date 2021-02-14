@@ -57,6 +57,13 @@ class Home extends Component {
           <div className="highlights-heading">Projects</div>
           <div className="cards">
             <Card
+              front="Tower Defence Game"
+              back="A 3D tower defense game developed on Unity as part of a course"
+              link="https://github.com/DishonJordan/UnityTowerDefense"
+              frontImage=""
+              frontImageHeight="4.5vw"
+            />
+            <Card
               front="FlowLess"
               back="A React-based app to help minimize water consumption and work with friends to curve sustainability issues"
               link="https://github.com/Dvnc94/Waterly"
@@ -81,6 +88,13 @@ class Home extends Component {
               front="Weather Trends and Prediction"
               back="The project aims to display a correlation between temperature, humidity, rain, wind speed for the period of 10 years in Szeged, Hungary and train a model to predict temperature for next 5 days."
               link="https://github.com/Dvnc94/WeatherPrediction"
+              frontImage=""
+              frontImageHeight="4.5vw"
+            />
+            <Card
+              front="Budgetary"
+              back="Financial instability is a prominent problem all over the world. Simplify budgets with your new best friend - Budgetary"
+              link="https://github.com/DishonJordan/UnityTowerDefense"
               frontImage=""
               frontImageHeight="4.5vw"
             />
