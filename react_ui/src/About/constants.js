@@ -1,21 +1,21 @@
-import Edvisor from "./images/edvisor.jpeg";
+import Edvisorly from "./images/edvisorly.jpeg";
 import Harness from "./images/harness.png";
 import Infosys from "./images/infosys.jpeg";
 import Winc from "./images/winc.png";
 import Rose from "./images/rosehack.png";
 
 export const experiences = [{
-    "company": "EdVisor Education",
+    "company": "EdVisorly",
     "position": "Software Development Lead Intern",
     "start": "July 2020",
     "end": "Present",
     "responsibilities": "Manage product expectations with technical requirements, ensuring the reliability, accuracy and effectivness of the software solution. Track progress of development team keeping in mind the integrity of the product via quality assurance and CI/CD practices.",
-    "logo": Edvisor
+    "logo": Edvisorly
 },{
     "company": "Harness",
     "position": "Software Engineering Intern",
     "start": "July 2020",
-    "end": "Present",
+    "end": "September 2020",
     "responsibilities": "Develop / integrate react components and django endpoints. Troubleshoot, fix bugs, and modify software components",
     "logo": Harness
 },{
@@ -59,7 +59,7 @@ export const volunteerExp = [{
     "position": "Graduate Advisor",
     "start": "Feb 2020",
     "end": "Present",
-    "responsibilities": "",
+    "responsibilities": "Organized events to bridge the gap between Graduate and Undergraduate female students at UCR. 'WINC Graduate Student Led Webinars' encouraged Graduate students to share their experiences and expertise with fellow Highlanders.",
     "logo": Winc
 },{
     "company": "Rose Hack 2020",
